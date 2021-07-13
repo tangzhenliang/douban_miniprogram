@@ -1,0 +1,12 @@
+/* pages/my/my.wxss */
+.container{
+	margin: 0;
+	padding: 0;
+}
+.lunbo{
+	height:450rpx;
+	width:100%;
+}
+.lunbo image{
+	width:100%;
+}

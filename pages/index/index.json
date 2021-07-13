@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText":"影院热映",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+	<swiper class='lunbo' indicator-dots="true" autoplay="true" interval="2000">
+		<swiper-item wx:for="{{movies}}" wx:for-item="i" wx:key="id" bindtap="toDetail" data-id="{{i.id}}" id="{{i.id}}">
+			<image src="{{i.cover.url}}" mode="aspectFill">
+				<a href=""/>
+			</image>
+		</swiper-item>
+	</swiper>
+	<block wx:for="{{movies}}" wx:for-item="i" wx:key="id" class="content">
+		<view class="picture" data-id="{{i.id}}" id="{{i.id}}" bindtap="toDetail">
+			<image src="{{i.cover.url}}" mode="aspectFill" />
+		</view>
+		<view class="info">
+			<view class="information">
+				<text>片名: {{i.title}}\n\n</text>
+				<view wx:for="{{i.actors}}" wx:for-item="j" wx:key="i">
+					<view>主演：{{j}}</view>
+				</view>
+				<view wx:for="{{i.directors}}" wx:for-item="k" wx:key="i">
+					<text>\n导演: {{k}}</text>
+				</view>
+				<text>\n上映时间: {{i.release_date}}</text>
+				<text>\n{{i.card_subtitle}}</text>
+			</view>
+		</view>
+	</block>
+</view>

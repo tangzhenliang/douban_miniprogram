@@ -1,0 +1,8 @@
+/* pages/music/music.wxss */
+.btn{
+  margin-top: 15rpx;
+}
+
+.audio{
+  margin-left: 65rpx;
+}

@@ -1,0 +1,9 @@
+<!-- audio.wxml -->
+<audio class="audio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls="{{controls}}" loop="{{loop}}"></audio>
+
+<button class="btn" type="primary" bindtap="audioPlay">播放</button>
+<button class="btn" type="primary" bindtap="audioPause">暂停</button>
+<button class="btn" type="primary" bindtap="audio57">设置当前播放时间为57秒</button>
+<button class="btn" type="primary" bindtap="audioStart">从头开始</button>
+<button class="btn" type="primary" bindtap="audioLoop">设置/取消循环播放</button>
+<button class="btn" type="primary" bindtap="audioControls">显示/取消默认控件</button>

@@ -1,0 +1,13 @@
+<!--pages/detail/detail.wxml-->
+<view>
+	<image src="{{detail.cover_url}}" mode="aspectFill"></image>
+	<view>
+		<text class="title">名称:</text>
+		{{"《" + detail.title + "》"}}
+	</view>
+	<view wx:for="{{detail.actors}}" wx:for-item="i" wx:key="id">
+		主演: {{i.name}}
+		角色: <text wx:for="{{i.roles}}" wx:for-item="r" wx:key="r">{{r}},</text>
+	</view>
+</view>
+<button bindtap="goNextPage">返回上一页</button>
